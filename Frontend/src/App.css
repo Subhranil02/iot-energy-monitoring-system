@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+  font-family: Inter, Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.dashboard-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #334155;
+  color: white;
+}
+
+.tabs button:hover {
+  background: #475569;
+}
+
+.device-card,
+.alert-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.device-card h4,
+.alert-card h4 {
+  margin-bottom: 8px;
+}
+
+.overview-panel {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.status-good {
+  color: #22c55e;
+}
+
+.status-warning {
+  color: #f59e0b;
+}
+
+.status-critical {
+  color: #ef4444;
+}
